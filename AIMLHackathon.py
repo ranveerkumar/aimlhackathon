@@ -50,6 +50,7 @@ class CaptureZodiacSignIntentHandler(AbstractRequestHandler):
         
     def filter(self, X):
         date = X.split()
+        print(date)
         month = date[0]
         month_as_index = list(calendar.month_abbr).index(month[:3].title())
         day = int(date[1])
