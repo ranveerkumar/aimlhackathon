@@ -50,7 +50,7 @@ class CaptureZodiacSignIntentHandler(AbstractRequestHandler):
         
     def filter(self, X):
         date = X.split()
-        print(date)
+        print('SPLIT>>>>>>>>>>>>>>>: ', date)
         month = date[0]
         month_as_index = list(calendar.month_abbr).index(month[:3].title())
         day = int(date[1])
@@ -58,10 +58,14 @@ class CaptureZodiacSignIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         slots = handler_input.request_envelope.request.intent.slots
+        print('SLOTS >>>> ', slots)
         year = slots["year"].value
         month = slots["month"].value
         day = slots["day"].value
-        print(year, month, day)
+        print('slots: ', slots)
+        print('Day: ', day)
+        print('Month: ', month)
+        print('Year: ', year)
         url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSOfGoY2t5XBJaP4r7wyS6LXfI5y01v4Is7guNr9I83tMcnNcreFAvH_VJ-rvpdLP4gfHIMFDrmr8g3/pub?gid=204223133&single=true&output=csv"
         csv_content = requests.get(url).content
         df = pd.read_csv(io.StringIO(csv_content.decode('utf-8')))
