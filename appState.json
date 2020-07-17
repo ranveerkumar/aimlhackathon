@@ -1,0 +1,108 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "df36a506-c9bd-4078-83fc-f09339fd6709": {
+        "id": "df36a506-c9bd-4078-83fc-f09339fd6709",
+        "parent": null,
+        "name": "AIMLHackathon.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "AIMLHackathon.py",
+        "cursor": {
+          "lineNumber": 11,
+          "column": 16
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "AIMLHackathon"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSK07903eb9db264366867a743c4d3b5d11",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "7f3ae0c5-cf8c-4e37-aa00-2faeea16585f": {
+            "id": "7f3ae0c5-cf8c-4e37-aa00-2faeea16585f",
+            "name": "Test event",
+            "functionId": "df36a506-c9bd-4078-83fc-f09339fd6709",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "df36a506-c9bd-4078-83fc-f09339fd6709"
+    ],
+    "currentFileId": "df36a506-c9bd-4078-83fc-f09339fd6709",
+    "resources": {
+      "alexaSK07903eb9db264366867a743c4d3b5d11": {
+        "name": "alexaSK07903eb9db264366867a743c4d3b5d11",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.07903eb9-db26-4366-867a-743c4d3b5d11",
+          "applicationID": ""
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "ask-sdk-core": {
+          "name": "ask-sdk-core",
+          "version": "1.11.0",
+          "dev": false,
+          "language": "python"
+        },
+        "boto3": {
+          "name": "boto3",
+          "version": "1.9.216",
+          "dev": false,
+          "language": "python"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.1",
+    "projectName": "AIMLHackathon",
+    "projectDescription": "Hackathon Project",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "aimlhackathon",
+      "url": "https://github.com/ranveerkumar/aimlhackathon"
+    }
+  }
+}
