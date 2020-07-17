@@ -193,4 +193,5 @@ sb.add_request_handler(IntentReflectorHandler()) # make sure IntentReflectorHand
 
 sb.add_exception_handler(CatchAllExceptionHandler())
 
-lambda_handler = sb.lambda_handler()
+def handler(event, context):
+    return sb.lambda_handler()(event, context)

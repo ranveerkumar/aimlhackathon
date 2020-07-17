@@ -11,11 +11,11 @@
         "isRemovable": true,
         "filePath": "AIMLHackathon.py",
         "cursor": {
-          "lineNumber": 11,
-          "column": 16
+          "lineNumber": 197,
+          "column": 47
         },
         "config": {
-          "runtime": "python3.8",
+          "runtime": "python3.6",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
@@ -31,10 +31,10 @@
         "testCases": {
           "7f3ae0c5-cf8c-4e37-aa00-2faeea16585f": {
             "id": "7f3ae0c5-cf8c-4e37-aa00-2faeea16585f",
-            "name": "Test event",
+            "name": "Invoke",
             "functionId": "df36a506-c9bd-4078-83fc-f09339fd6709",
-            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
-            "eventTemplate": "hello-world"
+            "event": "{\n    \"version\": \"1.0\",\n    \"session\": {\n        \"new\": true,\n        \"sessionId\": \"amzn1.echo-api.session.123456789012\",\n        \"application\": {\n            \"applicationId\": \"amzn1.ask.skill.987654321\"\n        },\n        \"user\": {\n            \"userId\": \"amzn1.ask.account.testUser\"\n        },\n        \"attributes\": {}\n    },\n    \"context\": {\n        \"AudioPlayer\": {\n            \"playerActivity\": \"IDLE\"\n        },\n        \"System\": {\n            \"application\": {\n                \"applicationId\": \"amzn1.ask.skill.987654321\"\n            },\n            \"user\": {\n                \"userId\": \"amzn1.ask.account.testUser\"\n            },\n            \"device\": {\n                \"supportedInterfaces\": {\n                    \"AudioPlayer\": {}\n                }\n            }\n        }\n    },\n    \"request\": {\n        \"type\": \"LaunchRequest\",\n        \"requestId\": \"amzn1.echo-api.request.1234\",\n        \"timestamp\": \"2016-10-27T18:21:44Z\",\n        \"locale\": \"en-US\"\n    }\n}",
+            "eventTemplate": "alexa-skills-kit-start-session"
           }
         }
       }
@@ -82,6 +82,18 @@
         "boto3": {
           "name": "boto3",
           "version": "1.9.216",
+          "dev": false,
+          "language": "python"
+        },
+        "pandas": {
+          "name": "pandas",
+          "version": "1.0.5",
+          "dev": false,
+          "language": "python"
+        },
+        "numpy": {
+          "name": "numpy",
+          "version": "1.19.0",
           "dev": false,
           "language": "python"
         }

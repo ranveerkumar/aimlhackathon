@@ -39,7 +39,7 @@
         "MemorySize": 128,
         "Handler": "AIMLHackathon.handler",
         "Timeout": 60,
-        "Runtime": "python3.8",
+        "Runtime": "python3.6",
         "Layers": [],
         "TracingConfig": {
           "Mode": "PassThrough"
