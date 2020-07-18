@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "AIMLHackathon.py",
         "cursor": {
-          "lineNumber": 63,
-          "column": 37
+          "lineNumber": 29,
+          "column": 1
         },
         "config": {
           "runtime": "python3.6",
